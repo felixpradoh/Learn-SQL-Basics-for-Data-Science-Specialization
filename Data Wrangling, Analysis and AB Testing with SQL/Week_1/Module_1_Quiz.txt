@@ -1,0 +1,107 @@
+
+Question 1
+Based on the dataset for this course, what does this query count?
+
+[x] Counts the number of rows in the orders table
+[ ] Counts the number of invoices
+[ ] Counts the number of users who have ordered an item
+[ ] Counts the numbers of users
+
+------------------------------------------------------------------
+
+Question 2
+Assume you have no information about the data in the example table.
+When I run the query below,  no rows are returned, but there are no error messages. What are possible reasons for this? (Select all that apply.)
+
+[x] There are no rows in the example_table - it's empty
+[x] There are no rows with a null id
+[ ] There is no column called id
+
+------------------------------------------------------------------
+
+Question 3
+In the events table, (dsv1069.events) for this class, how many rows exist per event_id?
+
+[x] One per parameter_name
+[ ] Always more than one
+[ ] Exactly one
+
+------------------------------------------------------------------
+
+Question 4
+When you encounter a new dataset, which of the following can you assume? (Select all that apply.)
+
+[x] Test usage is unfiltered
+[ ] The table is empty
+[ ] The table has a primary key
+[x] There are duplicate rows
+[x] The data is out-of-date
+
+------------------------------------------------------------------
+
+Question 5
+TROUBLESHOOT THIS ERROR: 
+Based on your exploration of the tables in the course dataset. Why are the results to this specific query empty?
+
+[ ] The users table is empty
+[ ] There are no events with this event_name
+[x] There are no parent_user_ids that satisfy the WHERE clause
+
+------------------------------------------------------------------
+
+
+Question 6
+TROUBLESHOOT THIS ERROR: 
+Why are the results for this specific query empty? 
+
+[ ] The table is empty
+[ ] No items have ever been viewed
+[x] There are no events with this event_name
+
+------------------------------------------------------------------
+
+Question 7
+What does this query do? Select all true statements.
+
+[ ] The query counts the number of rows in the events table.
+[ ] The query counts the number of view_item events.
+[x] The query counts the number of rows corresponding to view_item events.
+[ ] The query counts the number of events.
+[ ] The query returns all of the rows in the events table.
+
+------------------------------------------------------------------
+
+
+Question 8
+Consider the following query:
+
+[ ] What happens when some rows have a NULL value in the column table_alpha.key?
+[ ] Those values aren't included in the result.
+[ ] Each row with a null value will be joined to every row in table_beta.
+[ ] It is not possible for a join key to be null, the query will return an error.
+[ ] Each row with a null value is joined to every row in table_beta where table_beta.column is null.
+
+------------------------------------------------------------------
+
+
+Question 9
+Which of the following are problems with the query below?
+
+[ ] We are missing a comma
+[ ] The join should be on users.parent_user_id
+[x] Count(*) counts rows not unique users
+[ ] We need a GROUP BY clause
+[ ] The join should be on users.user_id
+[ ] There are no error messages, so it must be right
+
+------------------------------------------------------------------
+
+Question 10
+In the users table, the column parent_user_id is __________________.
+
+[ ] Never NULL
+[x] Sometimes NULL
+[ ] Always NULL
+
+------------------------------------------------------------------
+
