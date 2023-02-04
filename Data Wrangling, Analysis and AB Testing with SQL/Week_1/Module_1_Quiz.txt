@@ -32,7 +32,7 @@ Question 4
 When you encounter a new dataset, which of the following can you assume? (Select all that apply.)
 
 [x] Test usage is unfiltered
-[ ] The table is empty
+[x] The table is empty
 [ ] The table has a primary key
 [x] There are duplicate rows
 [x] The data is out-of-date
@@ -79,7 +79,7 @@ Consider the following query:
 [ ] Those values aren't included in the result.
 [ ] Each row with a null value will be joined to every row in table_beta.
 [ ] It is not possible for a join key to be null, the query will return an error.
-[ ] Each row with a null value is joined to every row in table_beta where table_beta.column is null.
+[x] Each row with a null value is joined to every row in table_beta where table_beta.column is null.
 
 ------------------------------------------------------------------
 
