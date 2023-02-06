@@ -1,0 +1,107 @@
+Question 1
+Let’s suppose we want to write a query to answer both of these questions:
+- How many items have been purchased?
+- How many items do we have?
+
+[ ] Category
+    item_count
+[x] Item_count
+    Items_ever_purchased_count
+[ ] Item_count
+    User_count
+[ ] User_count
+    Item_id
+    View_count
+
+-------------------------------------------------------------------------
+
+Question 2
+Please select all tables that will be necessary answer both of these questions:
+
+- How many items have been purchased?
+- How many items do we have?
+
+[ ] View_items
+[ ] Users
+[x] Items
+[x] Orders
+[ ] Events
+
+-------------------------------------------------------------------------
+
+Question 3
+We’ve decided to only use the items and orders tables to answer the following questions:
+
+- How many items have been purchased?
+- How many items do we have?
+Can we compute the columns Items_count, items_ever_purchased_count without a subquery?
+
+[x] Yes
+[ ] No
+
+-------------------------------------------------------------------------
+
+Question 4
+We’ve decided to answer the following questions:
+
+- How many items have been purchased?
+- How many items do we have?
+Which of the following queries will answer both those questions without further computation?
+
+[ ] SELECT 
+        COUNT(DISTINCT items.id)       AS items_count,
+        COUNT(DISTINCT orders.item_id) AS items_ever_purchased_count
+    FROM  
+        dsv1069.items
+    JOIN
+        dsv1069.orders
+    ON 
+        items.id = orders.item
+
+[x] SELECT 
+        COUNT(DISTINCT items.id)       AS items_count,
+        COUNT(DISTINCT orders.item_id) AS items_ever_purchased_count
+    FROM  
+        dsv1069.items
+    LEFT OUTER JOIN
+        dsv1069.orders
+    ON 
+    items.id = orders.item
+
+[ ] SELECT 
+        COUNT(items.id)                AS items_count,
+        COUNT(orders.item_id)          AS items_ever_purchased_count
+    FROM  
+        dsv1069.items
+    JOIN
+        dsv1069.orders
+    ON 
+        items.id = orders.item
+    GROUP BY 
+        items.id
+
+-------------------------------------------------------------------------
+
+Question 5
+In the previous question we decided that the query below could answer the questions :
+
+- How many items have been purchased?
+- How many items do we have?
+
+--------------------------------------
+
+SELECT 
+    COUNT(DISTINCT items.id)       AS items_count,
+    COUNT(DISTINCT orders.item_id) AS items_ever_purchased_count
+FROM  
+    dsv1069.items
+LEFT OUTER JOIN
+    dsv1069.orders
+ON 
+items.id = orders.item
+
+--------------------------------------
+
+Is this the only possible way to answer the question? Justify your answer.
+
+"No, there are other ways."
