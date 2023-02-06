@@ -1,0 +1,147 @@
+Question 1
+Which step should happen first in data analysis?
+
+[ ] Cleaning and Labeling Data
+[x] Collecting Data
+[ ] Machine Learning
+
+-----------------------------------------------------------------------
+
+Question 2
+TROUBLESHOOT THIS ERROR by selecting appropriate actions to remedy this specific query:
+Kat ran 9 lines of MySQL (finished in 112ms):
+
+1| --------------
+2| CREATE TABLE 
+3| example_table
+4| (
+5| column1  DATE,
+6| column2  VARCHAR(30),
+7| column3  INT
+8| )
+9| --------------
+
+ERROR 1050 (42S01) at line 1: Table 'example_table' already exists Bye mysql> 
+
+
+[x] Run DESCRIBE TABLE example_table to see if the existing example_table is structured appropriately
+[ ] There is no error here
+[ ] Check that the data type for column2 should actually be VARCHAR(30)
+[ ] Check the syntax, near line 6
+
+-----------------------------------------------------------------------
+
+Question 3
+Based on the code snippet below, which statements are definitely true (select all that apply): 
+
+ 1| CREATE TABLE table_x AS
+ 2| SELECT
+ 3| dates_rollup.date,
+ 4| COUNT(*)
+ 5| FROM
+ 6| Dates_rollup
+ 7| JOIN
+ 8| Table_y
+ 9| ON
+10| dates_rollup.date = table_y.date
+11| GROUP BY
+12| date
+
+[x] table_x is dependent on table_y
+[ ] table_y has no dependencies
+[x] table_x is dependent on table_y and dates_rollup
+[ ] table_y is dependent on table_x
+
+-----------------------------------------------------------------------
+
+Question 4
+Based on what you know about the orders table for this class, which of the following columns have a suitable datatype?
+
+[ ] Created_at
+[x] user_id
+[ ] Paid_at
+[x] Invoice_id
+[x] item_name
+
+-----------------------------------------------------------------------
+
+Question 5
+For this class, we are using Mode on a dataset specifically created for this course. Which of these circumstances could be different in a real world situation? (Select all that apply.)
+
+[ ] The categories of data types (Number, Date, String)
+[x] The specific dialect of SQL
+[x] How frequently the data is updated
+
+-----------------------------------------------------------------------
+
+Question 6
+Based on what you know about the items table for this class, which of the following columns have a suitable datatype? (Select all that apply.)
+
+[ ] created_at
+[x] name
+[x] category
+
+-----------------------------------------------------------------------
+
+Question 7
+Which of the following table methods allows you to specify data types?
+
+[ ] 1| MAKE NEW TABLE 
+    2| example_table 
+    3| AS …
+
+[ ] 1| SELECT * 
+    2| FROM
+    3| AS …
+
+[ ] 1| CREATE TABLE
+    2| example_table
+    3| AS …
+
+[x] 1| CREATE TABLE
+    2| example_table
+    3| (column_name1 ….)
+
+-----------------------------------------------------------------------
+
+Question 8
+When creating a user info table we used a variable in place of which column?
+
+[ ] The user
+[ ] The order id
+[x] The date
+
+-----------------------------------------------------------------------
+
+Question 9
+Suppose in a table, you find a column called email which contains the value user@domain.com. What is the correct data type category for this column?
+
+|...|     email     |...|
+|...|user@domain.com|...|
+|...|      ...      |...|
+
+[x] String
+[ ] Number
+[ ] Date
+
+-----------------------------------------------------------------------
+
+Question 10
+In this module, we created a table specifically of item view events. What level of the hierarchy of data does this belong on?
+
+[ ] Learn and Optimize
+[ ] Collecting Data
+[x] Explore and Transform
+
+-----------------------------------------------------------------------
+
+Question 11
+Suppose in a table you find a column called event_id, which contains the value z87df6ab4waoa756b3. What is the correct data type category for this column?
+
+|...|      event_id      |...|
+|...| z87df6ab4waoa756b3 |...|
+|...|         ...        |...|
+
+[ ] Date
+[ ] Number
+[x] String
