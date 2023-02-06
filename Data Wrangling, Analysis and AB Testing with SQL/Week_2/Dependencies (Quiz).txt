@@ -1,0 +1,48 @@
+
+Question 1
+ETL stands for:
+
+[ ] Extract Transform Language
+[x] Extract Transform Load
+[ ] Extraction Transaction Load
+[ ] Extract Transaction Language
+[ ] Extraction Transform Load
+
+-------------------------------------------------------------
+
+
+Question 2
+If I say that table X is dependent on table Y which table should be generated (or refreshed) first?
+
+[x] Table Y
+[ ] Table X
+
+-------------------------------------------------------------
+
+Question 3
+Based on the material covered in this lesson What is a Dependency? which of the following statements is true?
+
+[x] The view_items table depends on the events table
+[ ] The view_items table depends on the items table
+[ ] The events table depends on the view_items table
+[ ] The users table depends on the events table
+
+-------------------------------------------------------------
+
+Question 4
+Based on the code snippet below, which statements are definitely true: 
+
+CREATE TABLE table_x AS
+SELECT 
+  date, 
+  COUNT(*)
+FROM 
+  table_y
+GROUP BY 
+  date
+
+[x] Table_x is dependent on table_y
+[ ] Table_y has no dependencies
+[ ] Table_y is dependent on table_x
+
+-------------------------------------------------------------

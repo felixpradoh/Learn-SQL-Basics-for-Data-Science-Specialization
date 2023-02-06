@@ -1,0 +1,72 @@
+
+-- Question 1
+-- Which of the following is easier to read?
+
+[x]
+SELECT 
+  column_1, 
+  column_2, 
+  count(*)
+FROM 
+  example_table 
+WHERE
+ column_3 is not null 
+GROUP BY
+  column_1, 
+  column_2 
+
+[ ]
+select column_1, column_2, count(*) from example_table where column_3 is not null group by column_1, column_2 
+
+--------------------------------------------------------------------------------------
+
+Question 2
+Suppose in a table you find a column called username, which contains the value kat123. What is the correct data type category for this column?
+
+| ... | username | ... |
+| ... |  kat123  | ... |
+| ... |   ...    | ... |
+
+[ ] Number
+[ ] Date
+[x] String
+
+--------------------------------------------------------------------------------------
+
+Question 3
+Suppose in a table you find a column called price, which contains the value $9.99. What is the best data type category for this column?
+
+| ... | price | ... |
+| ... |  9.99 | ... |
+| ... |  ...  | ... |
+
+[ ] String
+[ ] Date
+[x] Number
+
+--------------------------------------------------------------------------------------
+
+Question 4
+Suppose in a table you find a column called created_at, which contains the value 2019-01-01. What is the best data type category for this column?
+
+| ... |  created_at  | ... |
+| ... |  2019-01-01  | ... |
+| ... |     ...      | ... |
+
+[ ] String
+[x] Date
+[ ] Number
+
+--------------------------------------------------------------------------------------
+
+
+Question 5
+Suppose in a table you find a column called price, which contains the value $9.99. Of the following options, which is the best data type for this column?
+
+| ... | price | ... |
+| ... |  9.99 | ... |
+| ... |  ...  | ... |
+
+[x] FLOAT
+[ ] BIGINT
+[ ] INT

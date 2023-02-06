@@ -1,0 +1,11 @@
+Question 1
+Which of the following table methods allows you to specify data types?
+
+[x] CREATE TABLE    
+    example_table 
+    ( column_name ...)   
+
+
+[ ] CREATE TABLE 
+    example_table 
+    AS ...
