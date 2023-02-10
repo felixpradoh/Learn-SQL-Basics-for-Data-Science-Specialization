@@ -51,25 +51,37 @@ SELECT
     item_id,
     COUNT(line_item_id) AS times_ordered
 FROM dsv1069.orders
-
+GROUP BY
+    item_id
 
 -- Exercise 5: Orders per category 
 
-SELECT * FROM dsv1069.orders
+SELECT
+    item_category,
+    COUNT(line_item_id) AS times_ordered
+FROM dsv1069.orders
+GROUP BY
+    item_category
 
 -- Exercise 6: Goal: Do user order multiple things from the same category? 
-
 SELECT
-    user_id,
-    item_id,
-    COUNT(line_item_id) AS item_ordered
-FROM 
-    dsv1069.orders
+    items_category,
+    AVG(times_category_ordered) AS avg_times_category_ordered
+FROM
+    (
+    SELECT
+        user_id,
+        item_category,
+        COUNT(DISTINCT line_item_id) AS times_category_ordered
+    FROM 
+        dsv1069.orders
+    GROUP BY
+        user_id,
+        item_category,
+    ) AS user_level
 GROUP BY
-    user_id,
-    item_id
-
-
+    item_category
+    
 -- Exercise 7: Goal: Find the average time between orders. Decide if this analysis is necessary 
 
 SELECT
