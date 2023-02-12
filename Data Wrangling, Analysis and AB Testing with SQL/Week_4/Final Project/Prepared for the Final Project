@@ -1,0 +1,120 @@
+Question 1
+Which of the following are the purpose of AB testing? (Select all that apply).
+
+[x] Learn from data
+[ ] Clean and label data
+[x] Provide evidence for or disprove a hypothesis
+
+-------------------------------------------------------------------------------
+
+Question 2
+Which of the following are necessary components of a user-level test assignment table? (Select all that apply).
+
+[x] A test name or number
+[x] The date or time of assignment
+[x] The assignment (treatment or control?)
+[x] The user_id
+[ ] The user's email address
+
+-------------------------------------------------------------------------------
+
+Question 3
+Which of the following are necessary components of an item-level test assignment table? (Select all that apply).
+
+[x] The item id
+[ ] The item category
+[ ] The user_id
+[x] A test name or number
+[x] The assignment (treatment or control?)
+[x] The date or time of assignment
+
+-------------------------------------------------------------------------------
+
+Question 4
+In the final project we’ll be doing AB testing at an item level. Check out the table final_assignment_qa. What other pieces of data will you need to compute the 30-day order binary. (Select all that apply).
+Please note: 30-day order binary means show a 1 if the item was ordered at any point the 30 day period after treatment, and 0 if the item was never ordered.
+
+[ ] The user_id
+[ ] The item category
+[x] I'm still missing something
+[ ] The users table
+[x] The orders table
+
+-------------------------------------------------------------------------------
+
+Question 5
+Use this AB testing calculator. Enter the numbers seen in the image, and use the results to determine if the results are statistically significant. Are the results statistically significant?
+
+[x] No
+[ ] Yes
+
+-------------------------------------------------------------------------------
+
+Question 6
+Use this AB testing calculator. Enter the numbers seen in the image, and select all the correct interpretations of the data. 
+
+[x] We have not collected enough samples to be able to detect statistically significant lift of 1%
+[ ] The treatment caused a 1% lift in the success metric
+[ ] The treatment caused a lift of as much as 27% in the success metric
+[x] There is no detectable change in this metric
+
+-------------------------------------------------------------------------------
+
+Question 7
+Use this AB testing calculator. Enter the numbers seen in the image. In this calculation, what is the observed success rate in control?
+
+[ ] 12% to 15%
+[ ] 7.5% to 9.6%
+[ ] 61%
+[ ] 14%
+[x] 8.5%
+[ ] 40% to 81%
+
+-------------------------------------------------------------------------------
+
+Question 8
+Use this AB testing calculator. Enter the numbers seen in the image. In this calculation, what is the observed success rate in treatment?
+
+[ ] 61%
+[ ] 40% to 81%
+[ ] 7.5% to 9.6%
+[x] 14%
+[ ] 8.5%
+[ ] 12% to 15%
+
+-------------------------------------------------------------------------------
+
+Question 9
+Use this AB testing calculator. Enter the numbers seen in the image. In this calculation, what is the observed relative lift in success rate between control and treatment?
+
+[ ] 14%
+[ ] 7.5% to 9.6%
+[ ] 8.5%
+[ ] 12% to 15%
+[x] 61%
+[ ] 40% to 81%
+
+-------------------------------------------------------------------------------
+
+Question 10
+Use this AB testing calculator. Enter the numbers seen in the image. In this calculation, what is the range of improvement that is likely to have been caused by the treatment?
+
+[x] 40% to 81%
+[ ] 61%
+[ ] 7.5% to 9.6%
+[ ] 12% to 15%
+[ ] 14%
+[ ] 8.5%
+
+
+Question 11
+Which of the following queries would meet the coding standards for the final project?
+
+[x] SELECT 
+        COUNT(*) AS user_count
+    FROM 
+        dsv1069.users
+
+[ ] SELECT
+        COUNT(*)
+    FROM dsv1069.users
