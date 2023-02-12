@@ -1,0 +1,57 @@
+
+Question 1
+This statement will return an error. Please list why.
+
+1| SELECT
+2| TrackID
+3| Name
+4| AlbumID
+5| FROM tracks
+
+[x] It's missing comma after "TrackID", and "Name"
+[ ] It lists too many columns
+[ ] It doesn't state where to get the data from 
+
+-------------------------------------------------------------------------------
+
+Question 2
+In the ER diagram below, the infinity symbol is representing a "many" relationship and the key is representing "one". Select all the tables that have a one-to-many relationship.
+
+[x] Artist to Albums
+[x] Customers to Invoices
+[x] Employees to Customers
+
+-------------------------------------------------------------------------------
+
+Question 3
+When using SQLite, what datatypes can you assign to a column when creating a new table? Select all that apply.
+
+[x] Real
+[x] Null
+[x] Text
+[x] Integer
+
+-------------------------------------------------------------------------------
+
+Question 4
+Primary Keys must be unique values.
+
+[x] True
+[ ] False
+
+-------------------------------------------------------------------------------
+
+Question 5
+What is the query below missing in order to execute?
+
+1| albums.title as album_title,
+2| tracks.name as track_name 
+3| FROM tracks 
+4| JOIN albums ON tracks.albumid = albums.albumid
+
+[x] Select
+[ ] A Comma 
+[ ] The Column Names
+[ ] From
+
+-------------------------------------------------------------------------------
