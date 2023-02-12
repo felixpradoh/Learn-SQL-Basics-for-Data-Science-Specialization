@@ -1,0 +1,110 @@
+Question 1
+Filtering data is used to do which of the following? (select all that apply)
+
+[x] Reduce the time it takes to run the query
+[x] Reduces the strain on the client application
+[x] Narrows down the results of the data. 
+[x] Helps you understand the contents of your data
+[x] Removes unwanted data in a calculation
+
+-------------------------------------------------------------------------------
+
+
+Question 2
+You are doing an analysis on musicians that start with the letter “K”. Select the correct query that would retrieve only the artists whose name starts with this letter. 
+
+
+[ ] SELECT name
+    FROM Artists
+    WHERE name IN ‘K%’;
+
+[x] SELECT name
+    FROM Artists
+    WHERE name LIKE ‘K%’;
+
+[ ] SELECT name
+    FROM Artists
+    WHERE name LIKE ‘%K%’;
+
+[ ] SELECT name
+    FROM Artists
+    WHERE name LIKE ‘%K’;
+
+-------------------------------------------------------------------------------
+
+Question 3
+A null and a zero value effectively mean the same thing. True or false?
+
+[ ] True
+[x] False
+
+-------------------------------------------------------------------------------
+
+Question 4
+Select all that are true regarding wildcards (Select all that apply.)
+
+[x] Wildcards at the end of search patterns take longer to run
+[x] Wildcards take longer to run compared to a logical operator
+[ ] Wildcards can be used for non-text data items
+
+-------------------------------------------------------------------------------
+
+Question 5
+Select the statements below that ARE NOT true of the ORDER BY clause (select all that apply).
+
+[ ] It's only applied to the column names it directly precedes
+[x] Cannot sort by a column not retrieved
+[ ] Can take the name of one or more columns
+[x] Can be anywhere in the select statement
+
+-------------------------------------------------------------------------------
+
+Question 6
+Select all of the valid math operators in SQL (select all that apply).
+
+[ ] ^ (exponents)
+[x] / (division)
+[x] - (subtraction)
+[x] + (addition)
+[x] * (multiplication)
+
+-------------------------------------------------------------------------------
+
+Question 7
+Which of the following is an aggregate function? (select all that apply)
+
+[x] COUNT()
+[ ] DISTINCT()
+[x] MAX()
+[x] MIN()
+
+-------------------------------------------------------------------------------
+
+Question 8
+Which of the following is true of GROUP BY clauses? (Select all that apply.)
+
+[x] Every column in your select statement may/can be present in a group by clause, except for aggregated calculations.
+[x] NULLs will be grouped together if your Group By column contains NULLs
+[x] GROUP BY clauses can contain multiple columns
+
+-------------------------------------------------------------------------------
+
+Question 9
+Select the true statement below.
+
+[x] HAVING filters after the data is grouped. 
+[ ] WHERE filters after the data is grouped
+
+-------------------------------------------------------------------------------
+
+Question 10
+Which is the correct order of occurrence in a SQL statement?
+
+[ ] select, group by, from, where, having
+[ ] select, having, where, group by
+[x] select, from, where, group by, having
+[ ] select, from, where, order by, having
+
+-------------------------------------------------------------------------------
+ 
+

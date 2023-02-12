@@ -1,0 +1,169 @@
+Question 1
+For all the questions in this practice set, you will be using the Salary by Job Range Table. This is a
+single table titled: salary_range_by_job_classification. This table contains the
+following columns:
+
+- SetID
+- Job_Code 
+- Eff_Date 
+- Sal_End_Date 
+- Salary_setID 
+- Sal_Plan 
+- Grade 
+- Step 
+- Biweekly_High_Rate 
+- Biweekly_Low_Rate 
+- Union_Code 
+- Extended_Step 
+- Pay_Type
+
+Please refer to this information to write queries to answer the questions. Are you ready to get started?
+
+[x] Yes, I am ready to begin.
+[ ]N o, I am not ready to begin.
+
+-------------------------------------------------------------------------------
+
+Question 2
+Find the distinct values for the extended step. The code has been started for you, but you will need to program the third line yourself before running the query.
+
+1| SELECT
+2| distinct Extended_step
+3| from salary_range_by_job_classification
+
+Which of the following values is not a distinct value?
+
+[ ] 0
+[ ] 6
+[ ] 2
+[x] 5
+[ ] 11
+
+-------------------------------------------------------------------------------
+
+Question 3
+Excluding $0.00, what is the minimum bi-weekly high rate of pay (please include the dollar sign and decimal point in your answer)? The code has been started for you, but you will need to add onto the last line of code to get the correct answer.
+
+1| Select 
+2| min(Biweekly_high_Rate)
+3| From salary_range_by_job_classification
+4| WHERE Biweekly_high_Rate != '$0.00'
+
+Answer: $100.00
+
+-------------------------------------------------------------------------------
+
+Question 4
+What is the maximum biweekly high rate of pay (please include the dollar sign and decimal point in your answer)? The code has been started for you, but you will need to add onto the last line of code to get the correct answer.
+
+1| SELECT 
+2| Max(Biweekly_high_Rate)
+3| From salary_range_by_job_classification
+
+Answe: $9726.38
+
+-------------------------------------------------------------------------------
+
+Question 5
+What is the pay type for all the job codes that start with '03'? The code has been started for you, but you will need to program the fourth and fifth lines yourself before running the query.
+
+1| Select
+2| job_code,
+3| pay_type
+4| From salary_range_by_job_classification
+5|WHERE job_code like '03%'
+
+Answer: B
+
+-------------------------------------------------------------------------------
+
+Question 6
+Run a query to find the Effective Date (eff_date) or Salary End Date
+(sal_end_date) for grade Q90H0? The code has been started for you, but you will need to program the third through the sixth lines yourself before running the query. 
+
+1| Select
+2| grade,
+3| eff_date,
+4| sal_end_date
+5| From salary_range_by_job_classification
+6| WHERE grade = 'Q90H0'
+
+What is the Effective Date (eff_date) for grade Q90H0? (include date and time)
+
+Answer: 12/26/2009
+
+-------------------------------------------------------------------------------
+
+Question 7
+Sort the Biweekly low rate in ascending order. There is no starter code, as you need to write and run the query on your own. Hint: there are 4 lines to run this query.
+
+1| SELECT
+2|     Biweekly_Low_Rate
+3| FROM
+4|     salary_range_by_job_classification
+5| ORDER BY Biweekly_Low_Rate ASC
+
+Are these values properly sorted? 
+
+[x] No
+[ ] Yes
+
+-------------------------------------------------------------------------------
+
+Question 8
+Write and run a query, with no starter code to answer this question: What Step are Job Codes 0110-0400? Hint: there are 6 lines to run this query.
+
+1| SELECT Job_Code, Step
+2| FROM salary_range_by_job_classification
+3| WHERE Job_Code >=0110 AND Job_Code <=0400
+
+Answer: 1
+
+-------------------------------------------------------------------------------
+
+Question 9
+Write and run a query, with no starter code or hints to answer this question: What is the Biweekly High Rate minus the Biweekly Low Rate for job Code 0170?
+
+1| SELECT
+2|     Job_Code,   
+3|     Biweekly_High_Rate-Biweekly_Low_Rate
+4| FROM 
+5|    salary_range_by_job_classification
+6|WHERE 
+7|    Job_Code = '0170'
+
+Answer: 0
+
+-------------------------------------------------------------------------------
+
+Question 10
+Write and run a query, with no starter code or hints to answer this question: What is the Extended Step for Pay Types M, H, and D? 
+
+1| SELECT 
+2|    Extended_Step, Pay_Type
+3| FROM
+4|    salary_range_by_job_classification
+5| WHERE Pay_Type IN  ("M", "H", "D")
+
+Answer: 0
+ 
+-------------------------------------------------------------------------------
+
+Question 11
+Write and run a query, with no starter code or hints to answer this question: What is the step for
+Union Code 990 and a Set ID of SFMTA or COMMN? 
+
+ 1| SELECT 
+ 2|    Union_Code,
+ 3|    Step,
+ 4|    SetID
+ 5| FROM
+ 6|    salary_range_by_job_classification
+ 7| WHERE 
+ 8|    Union_Code = 990 
+ 9| AND 
+ 10|   SetID IN ("SFTMA", "COMMN")
+
+Answer: 1
+
+-------------------------------------------------------------------------------

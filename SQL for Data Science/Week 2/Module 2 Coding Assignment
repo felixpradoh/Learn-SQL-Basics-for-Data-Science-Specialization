@@ -1,0 +1,133 @@
+Question 1
+ Run Query: Find all the tracks that have a length of 5,000,000 milliseconds or more.
+
+1| SELECT COUNT(TrackID)
+2| FROM Tracks
+3| WHERE Milliseconds >=  5000000
+
+How many tracks are returned?
+Answer: 2
+
+-------------------------------------------------------------------------------
+
+Question 2
+Run Query: Find all the invoices whose total is between $5 and $15 dollars.
+
+1| SELECT COUNT(InvoiceID)
+2| FROM Invoices
+3| WHERE Total BETWEEN 5.00 AND 15.00
+
+While the query in this example is limited to 10 records, running the query correctly will indicate how many total records there are - enter that number below.
+
+Answer168
+ 
+-------------------------------------------------------------------------------
+
+Question 3
+Run Query: Find all the customers from the following States: RJ, DF, AB, BC, CA, WA, NY.
+
+1| SELECT *
+2| FROM Customers
+3| WHERE State IN ('RJ', 'DF', 'AB', 'BC', 'CA', 'WA', 'NY')
+ 
+What company does Jack Smith work for?
+
+[ ] Apple Inc.
+[x] Microsoft Corp
+[ ] Google Inc.
+[ ] Rogers Canada
+
+-------------------------------------------------------------------------------
+
+Question 4
+ Run Query: Find all the invoices for customer 56 and 58 where the total was between $1.00 and $5.00.
+
+1| SELECT *
+2| FROM Invoices
+3| WHERE 
+4|   CustomerID BETWEEN 56 AND 58
+5| AND
+6|  Total BETWEEN 1.00 AND 5.00
+ 
+What was the invoice date for invoice ID 315?
+
+[ ] 1-29-2013
+[x] 10-27-2012
+[ ] 12-22-2013
+[ ] 6-12-2010
+
+-------------------------------------------------------------------------------
+
+Question 5
+Run Query: Find all the tracks whose name starts with 'All'.
+
+1| SELECT *
+2| FROM Tracks
+3| WHERE Name LIKE 'All%'
+
+While only 10 records are shown, the query will indicate how many total records there are for this query - enter that number below.
+
+Answer: 15
+ 
+-------------------------------------------------------------------------------
+
+Question 6
+Run Query: Find all the customer emails that start with "J" and are from gmail.com.
+
+1| SELECT *
+2| FROM Customers
+3| WHERE Email LIKE ('J%gmail.com')
+ 
+Enter the one email address returned (you will likely need to scroll to the right) below.
+
+Answer: jubarnett@gmail.com
+ 
+-------------------------------------------------------------------------------
+
+Question 7
+Run Query: Find all the invoices from the billing city Brasília, Edmonton, and Vancouver and sort in descending order by invoice ID.
+
+1| SELECT *
+2| FROM Invoices
+3| WHERE BillingCity IN ('Brasilía', 'Edmonton', 'Vancouver')
+4| ORDER BY InvoiceID  DESC
+
+What is the total invoice amount of the first record returned? Enter the number below without a $ sign. Remember to sort in descending order to get the correct answer.
+
+Answer:13.86
+ 
+-------------------------------------------------------------------------------
+
+Question 8
+Run Query: Show the number of orders placed by each customer (hint: this is found in the invoices table) and sort the result by the number of orders in descending order.
+
+
+1| SELECT 
+2|     CustomerID, 
+3|     COUNT(*) AS orders
+4| FROM Invoices
+5| GROUP BY CustomerID
+6| ORDER BY orders DESC
+ 
+What is the number of items placed for the 8th person on this list? Enter that number below.
+
+Answer: 7
+ 
+-------------------------------------------------------------------------------
+
+Question 9
+Run Query: Find the albums with 12 or more tracks.
+
+
+1| SELECT 
+2|     AlbumId,
+3|     COUNT(*) AS Ntracks
+4| FROM Tracks
+5| GROUP BY AlbumId
+6| Having COUNT(*) >= 12
+
+While the number of records returned is limited to 10, the query, if run correctly, will indicate how many total records there are. Enter that number below.
+
+Answer: 158
+ 
+-------------------------------------------------------------------------------
