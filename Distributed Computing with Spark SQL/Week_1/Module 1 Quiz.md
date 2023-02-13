@@ -1,13 +1,15 @@
-Question 1
+1. Question 1
 Which of the following are true when it comes to the business value of big data? (Select all that apply.)
 
-[x] The size of the data businesses collect is growing
-[x] Businesses are increasingly making data-driven decisions
+[x] The size of the data businesses collect is growing.
+
+[x] Businesses are increasingly making data-driven decisions.
+
 [ ] Automated technologies mean that data scientists and data analysts are no longer needed
 
 -------------------------------------------------------------------------------
 
-Question 2
+2. Question 2
 Spark uses...
 
 (Select all that apply.)
