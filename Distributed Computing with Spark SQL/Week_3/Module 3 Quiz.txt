@@ -1,0 +1,90 @@
+Question 1
+Decoupling storage and compute means storing data in one location and processing it using a separate resource. What are the benefits of this design principle? (Select all that apply.)
+
+[x] It allows for elastic resources so larger storage or compute resources are used only when needed
+[x] Resources are isolated and therefore more manageable and debuggable
+[x] It makes updates to new software versions easier
+[ ] It results in copies of the data in case of a data center outage
+
+-------------------------------------------------------------------------------
+
+Question 2
+You want to run a report entailing summary statistics on a large dataset sitting in a database. What is the main resource limitation of this task?
+
+[ ] IO: computation is more demanding that the data transfer
+[ ] CPU: the transfer of data is more demanding than the computation
+[x] IO: the transfer of data is more demanding than the computation
+[ ] CPU: computation is more demanding than the data transfer
+
+-------------------------------------------------------------------------------
+
+Question 3
+Processing virtual shopping cart orders in real time is an example of...
+
+[ ] Online Analytical Processing (OLAP)
+[x] Online Transaction Processing (OLTP)
+
+-------------------------------------------------------------------------------
+
+Question 4
+When are BLOB stores an appropriate place to store data? (Select all that apply.)
+
+[ ] For online transaction processing on a website
+[x] For cheap storage
+[x] For a "data lake" of largely unstructured data
+[x] For storing large files
+
+-------------------------------------------------------------------------------
+
+Question 5
+JDBC is the standard protocol for interacting with databases in the Java environment. How do parallel connections work between Spark and a database using JDBC?
+
+[ ] Specify the number of partitions using COALESCE. Spark then creates one parallel connection for each partition.
+[ ] Specify the numPartitions configuration setting. Spark then creates one parallel connection for each partition.
+[x] Specify a column, number of partitions, and the column's minimum and maximum values. Spark then divides that range of values between parallel connections.
+[ ] Specify the number of partitions using REPARTITION. Spark then creates one parallel connection for each partition.
+
+-------------------------------------------------------------------------------
+
+Question 6
+What are some of the advantages of the file format Parquet over CSV? (Select all that apply.)
+
+[x] Parallelism
+[x] Compression
+[ ] Corruptible
+[x] Columnar
+
+-------------------------------------------------------------------------------
+
+Question 7
+SQL is normally used to query tabular (or "structured") data. Semi-structured data like JSON is common in big data environments. Why? (Select all that apply.)
+
+[x] It does not need a formal structure
+[x] It allows for data change over time
+[ ] It allows for easy joins between relational JSON tables
+[x] It allows for complex data types
+[x] It allows for missing data
+
+-------------------------------------------------------------------------------
+
+Question 8
+Data writes in Spark can happen in serial or in parallel. What controls this parallelism?
+
+[ ] The numPartitions setting in the Spark configuration
+[x] The number of data partitions in a DataFrame
+[ ] The number of jobs in a write operation
+[ ] The number of stages in a write operation
+
+-------------------------------------------------------------------------------
+
+Question 9
+Fill in the blanks with the appropriate response below: 
+
+A _______ table manages _______and a DROP TABLE command will result in data loss.
+
+[ ] Managed, only the metadata such as the schema and data location
+[ ] Unmanaged, only the metadata such as the schema and data location
+[x] Managed, both the data and metadata such as the schema and data location
+[ ] Unmanaged, both the data and metadata such as the schema and data location
+
+-------------------------------------------------------------------------------
