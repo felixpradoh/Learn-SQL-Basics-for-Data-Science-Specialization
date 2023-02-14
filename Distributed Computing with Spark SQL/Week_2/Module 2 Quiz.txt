@@ -1,0 +1,99 @@
+Question 1
+What are the different units of parallelism? (Select all that apply.)
+
+[x] Task
+[x] Executor
+[x] Partition
+[x] Core
+
+-------------------------------------------------------------------------------
+
+Question 2
+What is a partition?
+
+[ ] A division of computation that executes a query
+[x] A portion of a large distributed set of data
+[ ] A synonym with "task"
+[ ] The result of data filtered by a WHERE clause
+
+-------------------------------------------------------------------------------
+
+Question 3
+What is the difference between in-memory computing and other technologies? (Select all that apply.)
+
+[x] In-memory operates from RAM while other technologies operate from disk
+[ ] In-memory computing is slower than other types of computing
+[x] Computation not done in-memory (such as Hadoop) reads and writes from disk in between each step
+[x] In-memory operations were not realistic in older technologies when memory was more expensive
+
+-------------------------------------------------------------------------------
+
+Question 4
+Why is caching important?
+
+[ ] It improves queries against data read one or more times
+[ ] It reformats data already stored in RAM for faster access
+[ ] It always stores data in-memory to improve performance
+[x] It stores data on the cluster to improve query performance
+
+-------------------------------------------------------------------------------
+
+Question 5
+Which of the following is a wide transformation? (Select all that apply.)
+
+[ ] SELECT
+[x] GROUP BY
+[ ] WHERE
+[X] ORDER BY
+
+-------------------------------------------------------------------------------
+
+Question 6
+Broadcast joins...
+
+[x] Transfer the smaller of two tables to the larger, minimizing data transfer
+[ ] Shuffle both of the tables, minimizing computational resources
+[ ] Transfer the smaller of two tables to the larger, increasing data transfer requirements
+[ ] Shuffle both of the tables, minimizing data transfer by transferring data in parallel
+
+-------------------------------------------------------------------------------
+
+Question 7
+Adaptive Query Execution uses runtime statistics to:
+
+[x] Dynamically coalesce shuffle partitions
+[x] Dynamically switch join strategies
+[x] Dynamically optimize skew joins
+[ ] Dynamically cache data
+
+-------------------------------------------------------------------------------
+
+Question 8
+Which of the following are bottlenecks you can detect with the Spark UI? (Select all that apply.)
+
+[x] Shuffle reads
+[x] Shuffle writes
+[ ] Incompatible data formats
+[x] Data Skew
+
+-------------------------------------------------------------------------------
+
+Question 9
+What is a stage boundary?
+
+[ ] An action caused by a SQL query is predicate
+[x] When all of the slots or available units of processing have to sync with one another
+[ ] Any transition between Spark tasks
+[ ] A narrow transformation
+
+-------------------------------------------------------------------------------
+
+Question 10
+What happens when Spark code is executed in local mode?
+
+[ ] The code is executed against a local cluster
+[ ] A cluster of virtual machines is used rather than physical machines
+[x] The executor and driver are on the same machine
+[ ] The code is executed in the cloud
+
+-------------------------------------------------------------------------------
