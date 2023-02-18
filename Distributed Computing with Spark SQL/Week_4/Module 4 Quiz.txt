@@ -53,10 +53,10 @@ Which of the following are valid data models?
 Question 6
 What are the benefits a lakehouse architecture provides?
 
-[x] Combine scalability and low-cost storage of data warehouses with the speed and ACID transactional guarantees of data lakes
-NO[ ] Combine scalability and ACID transactional guarantees of data lakes with the speed and low-cost storage of data warehouses
-[ ] Combine scalability and low-cost storage of data lakes with the speed and ACID transactional guarantees of data warehouses
-NO[ ] Combine speed and low-cost storage of data lakes with the scalability and ACID transactional guarantees of data warehouses
+[ ] Combine scalability and low-cost storage of data warehouses with the speed and ACID transactional guarantees of data lakes
+[ ] Combine scalability and ACID transactional guarantees of data lakes with the speed and low-cost storage of data warehouses
+[x] Combine scalability and low-cost storage of data lakes with the speed and ACID transactional guarantees of data warehouses
+[ ] Combine speed and low-cost storage of data lakes with the scalability and ACID transactional guarantees of data warehouses
 
 -------------------------------------------------------------------------------
 
