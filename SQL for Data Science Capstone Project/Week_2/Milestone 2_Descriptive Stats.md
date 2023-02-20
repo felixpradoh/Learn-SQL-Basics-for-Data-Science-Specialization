@@ -8,25 +8,25 @@
 
    As we can see the TOP-20 countries with more amount of medals are those with typically have long and hard strong winters, making sense that are most used to winter sports, or invest more money in this kind of sports.
 
-     ![Winter_games](Winter_games.jpg "Winter_games")
+   ![Winter_games](Winter_games.png "Winter_games")
 
 - *Female and Male participants tend to be equilibrated over the years.*
 
    The plot shows larger male participation in the Olympic Games vs female participation up to approximately 1990. In the last 3 decades, the participation of both genres has followed the same trend, being slightly larger for men than women. However, it looks like this trend would converge for equality in the next years or soon decade.
 
-     ![male_female](male_female.jpg "male_female")
+   ![male_female](male_female.png "male_female")
 
 - *Developed countries have more medals on their records.*
 
    The TOP-30 countries with more medals in their records are somehow related to a larger GDP, or at least they are not countries with the lowest GDP. It is noticeable, that even if there are countries whose GDPs are not maybe the best, these countries have a strong a solid culture on sports (e.g.: URSS ex-countries or east-Europe.)
 
-      ![top30](top30.jpg "top30")
+   ![top30](top30.png "top30")
 
 - *It has to be an age of around 25 years, for the best winning medals.*
 
    It can be seen that for both genres, the average age for winning more medals in the Olympics is at the age of 25+/-5 years.
 
-      ![age](age.jpg "age")   
+   ![age](age.png "age")   
 
 
 **1. Submit 2-3 key points you may have discovered about the data, e.g. new relationships? Aha's! Did you come up with additional ideas for other things to review?**
